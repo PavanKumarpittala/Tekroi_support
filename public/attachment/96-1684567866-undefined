@@ -1,0 +1,95 @@
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=k1Vm0KClUbL+ys/szuT82YJlIydH9qeeHXvfqLA+AO6PyEJhi2HSUeITn285w2FXYH742x+bwYVfSIWKUcfQtgKtSk2WAseDnwR6AUzjBwPqlKKzInjwxA+dY7JTd1gjGmJSfp8e8W0N2AEdjs02ZMbtRIWQDXdJiJXe+5V3irPbnz6oxmTszuQlIJQe3vnh2bAoKsocMmBShiG8CQtovk0a/5kcssr8navMouPya9PD6H0BwWZOoANaN4ZhrDsmnr8fd9eKBvpbIkCiZV6geYn9K3hihnZg/8zc6KV8DHjhgqihZAWIokyqaMYxxkW/mZ7B9aJ7tyXmXBSigqjnmA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=/mhlHu9VJL84rENVSh6DvA42SWNnrpnvQ3pbKrirQvM=;
+ b=VKWJ/sF8OblBOMvY8+XcM4icrxLBdTNTqs7K3SlIjSdWvIgCSIcblMCndy5kSXSS+IPst2487Nsgpw8Y7Sbknd8kXJj/lpky0HwbgjSuZlM8ejGOmssLl7qc0PFuv7o2OyirhUrckL1RKq34iQbE41fV6jeLTw7VHFwsgebpUt1/OsSB/hxiN46ZXeG2ZW/QYP3dIeogxEr/EAIzNDz0Da1FK2OvUj3ehjtlDUp0DjyVWlMkb+Ez0EgwjtC7Ir8eHfklB8ReDbSI8ZXNkiYOqP61lby5QWXDhfDy701RaS8XltrTmSJFfu3u34RJvOLwTgL8YyOC5Sje1sG93l715w==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=tekroi.com; dmarc=pass action=none header.from=tekroi.com;
+ dkim=pass header.d=tekroi.com; arc=none
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=tekroi.com;
+Received: from MAZPR01MB7876.INDPRD01.PROD.OUTLOOK.COM (2603:1096:a01:25::13)
+ by PNZPR01MB4173.INDPRD01.PROD.OUTLOOK.COM (2603:1096:c01:1b::12) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6411.19; Sat, 20 May
+ 2023 07:30:06 +0000
+Received: from MAZPR01MB7876.INDPRD01.PROD.OUTLOOK.COM
+ ([fe80::d419:7cf9:bdcd:e11]) by MAZPR01MB7876.INDPRD01.PROD.OUTLOOK.COM
+ ([fe80::d419:7cf9:bdcd:e11%6]) with mapi id 15.20.6411.019; Sat, 20 May 2023
+ 07:30:06 +0000
+Message-ID: <116ad958af2d122c29d3c45645864b95@10.85.65.15>
+Date: Sat, 20 May 2023 13:00:04 +0530
+Subject: [Ticket # YFB-7760191] : FW: Query manager - WCPL Vizag
+From: TEKORI SUPPORT <support@tekroi.com>
+To: danny.kranthikumar@tekroi.com
+CC: priyank.j@fortunearrt.com, preetin@electricallines.com
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-ClientProxiedBy: PN3PR01CA0160.INDPRD01.PROD.OUTLOOK.COM
+ (2603:1096:c01:c8::21) To MAZPR01MB7876.INDPRD01.PROD.OUTLOOK.COM
+ (2603:1096:a01:25::13)
+Return-Path: support@tekroi.com
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: MAZPR01MB7876:EE_|PNZPR01MB4173:EE_
+X-MS-Office365-Filtering-Correlation-Id: a32a01f1-dbe2-42b4-bec7-08db59040895
+X-MS-Exchange-SenderADCheck: 1
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam: BCL:0;
+X-Microsoft-Antispam-Message-Info:
+ Th5hl7FasrvOJp4NKp3xCN1qC+8X6SFWSAYZn//1qZbmgnygBcXYEu9+vkhNpWCfZbj2p+EE/KYvADIKxnnGVnTtgYh3ey1ZKccfGQjnCXb2XAxEL3YSRFHsaaooucIFgqNGBHEB+VcGndyb19AKxCh++vYhUYBzGiHz+iXkmhpnGYpJDsmG7Mzc9FokTHou6z8b7JmuTpp/SQEduTt+4/YfFZr7CPkPe8ZbA0kInFmU0cEyQhNZn7pBKdCiGv4J0Ltl/JjVakpLbvdu931mG56ZA8rvsQ2VCA8rPDrcMSlPjtCrBSoCp+5YIWd291GgvXA9HGPAIRH4TYwhJcdLrXl7cEv/1lhKZbohGrFRPTuQZin3YqX4eDrMQGbTapel3uFd8J4iffl0Lj6ZP7pEAhO3mJIIvbjJRw/XnDnD085KpCTcB3lkKJ5dPEk9qOiQ9TNjFlZCZyGC355qcmQvwGe2TXJ9x80SELJWbzN+bpoZHqesZGTj0iQ1T43oaLIdszW9STK/H6ojxt1Mfd6DXWF4rL9yZcmafEct4t4e1s8w5+wPQh214c6YIS7V5YM67KghcbMs0I0z1dMDHTzzAMOvQUGESEd8o6IoQV8y2CemkxS95AGtLT4+Brpn5CQZiZzBh4swlQNaVBeoLm8KCA==
+X-Forefront-Antispam-Report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:MAZPR01MB7876.INDPRD01.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230028)(366004)(136003)(396003)(39830400003)(346002)(376002)(451199021)(316002)(34206002)(5660300002)(66946007)(38100700002)(6636002)(4326008)(558084003)(66556008)(8676002)(66476007)(86362001)(8936002)(83380400001)(38350700002)(14286002)(2906002)(26005)(9686003)(6506007)(6512007)(108616005)(478600001)(24736004)(52116002)(186003)(6486002)(41300700001)(8420600001);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-0:
+ =?us-ascii?Q?EYFMqxbFH+bChNiRAxiXgJ5JI24uVVM41y9RVcfZivZ0Z3k/FJJYcI3n4APG?=
+ =?us-ascii?Q?yvk0JgFXrtiX880HzhSbSvUDrznY5BlLR56Mk5UXpqEq0eohMRXjgqaayr4U?=
+ =?us-ascii?Q?Q03pxjsIN1TQi4yYMZ9tA6DFYEeszcjt/TZJNr1HvPiBJbyk3nwyLThaJPGA?=
+ =?us-ascii?Q?aRjDZB9Rpr6giZMbI+b2ITR4deJEWlII0PnlhIyRrG1uEfbzfL+Qqd6IlNmr?=
+ =?us-ascii?Q?lzMjG48PvM6Inz/lNeG3BtMYXTlbRmt6Sny1mXaWL/al75g8vjsgfYKo6PdP?=
+ =?us-ascii?Q?gQqb3ZtSPqkFJYcN0S45sskHuEa/GPayBwzjG25vA+wtp3df5xuDqid9wmFg?=
+ =?us-ascii?Q?qS1u9GL8VsWdQYXKcR9x2niqG4/mugT9d2+JZZut5nOCWZz56yExLUoWBUeQ?=
+ =?us-ascii?Q?SYFcjvMacWwKlbYawAawHp6vI+FjusGC4WDGGSUITAx6FwtO5whfcsdeB+TL?=
+ =?us-ascii?Q?q5JFIPdZiGfAPy/3Mpxp2nWfq7yMQ74w8ioJErzCE4JthpLe4wsJzs3xbwKw?=
+ =?us-ascii?Q?79afK3lNOOzaspRacS1akljUHYlpI/WvxL5irQvIZs0I9mbNaXF6K8yPBsUj?=
+ =?us-ascii?Q?dLhksVV6hLE0XgTSTk9UHwf6ekY8B9Ncx+uPR7fytk+mgE9Mucrqn9nJayWS?=
+ =?us-ascii?Q?qvs++8kLq1bm1hurWeTS6fehftSRkwRpjM5CXX7Z9dKkTpXocT8S84LjdWnX?=
+ =?us-ascii?Q?XFoHUrE7m5FWroIW1z/FdS3YKXgZ5T4SQcylpxWgnm+5BQzCHeIAYd+tkG/3?=
+ =?us-ascii?Q?a/eL2ceJAAyYE8EYpacQM+7ujs6kteVaVoC+3jKEZMX5Mq/wYhjfB1z2n1xL?=
+ =?us-ascii?Q?E4TOlBl2EtOy1d0lriafNJWIxBAuXdIBICw5UtEspJ6d/PW3DKvm07+WHSFb?=
+ =?us-ascii?Q?E79uu+eiTqo1q6pjLETPnDnsSx8/i7Ty4dl9xCPzUh8iOYyn2dn8Yo+ezHJg?=
+ =?us-ascii?Q?2yDq7WlmkOLbWWrrt8kuHrw7Qg1k6dvhFkhhYhaJaTJNyFiNHB8jTsAiJ6NQ?=
+ =?us-ascii?Q?3BO13+nXnllH/D7ROl2DLST6G8Xo8Kl9NOMx9ng5wtpX6NCvM/CdJbc/ZEBv?=
+ =?us-ascii?Q?dLLuPa+AJ+Do0wwymuPfkMnoMjcYSxCZ7x5rIywISiY7YIps+5UiYjfUi4Fp?=
+ =?us-ascii?Q?7EKURQQ1N/OTNQbvredCedfhRyS6mTPyi3HR+PTl7V+whMdHzc50faL4v4sl?=
+ =?us-ascii?Q?qXbrsviExyDijpYHV3WV92POkvbUx+djmQKMD5OG2MhL8K6gSsesHuaAK3tw?=
+ =?us-ascii?Q?/FwMpYdSdWUOY7CJ9K56d0YGoXrbg9GDHPkMk8TTfWgax2zS4oChIWJGYz1D?=
+ =?us-ascii?Q?3I3cF+26pTySa6NLBweIujHif4LuClLWtnc2NvezMayRTmNrCclKHrAdN2kS?=
+ =?us-ascii?Q?ZJCLNeIY2ohT4Bkq/DeP7cAERCRENjQH0Ikf67DS51kYdS3jp2UiIn7FfVcv?=
+ =?us-ascii?Q?QlCpidgdDWks6nHbpvjTMxQ+Vbpz5CUbQmT+85w7eEjdYPLtJkgmBRC9ggmm?=
+ =?us-ascii?Q?H7cvEdMW8zXnpu5ieBIPss/Muh6VyCyt6Fnl7OMtv7xCTuscMGTmLm3+5f74?=
+ =?us-ascii?Q?WL60aFvW0HYh7Q4xHdTdgfkYsmSxzWRM8inRp5Po?=
+X-OriginatorOrg: tekroi.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: a32a01f1-dbe2-42b4-bec7-08db59040895
+X-MS-Exchange-CrossTenant-AuthSource: MAZPR01MB7876.INDPRD01.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 20 May 2023 07:30:06.3129
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: fcb610c8-8233-4f53-9e08-7e49c64f5e1f
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: YwDGZXQ898WoGuzcF9Xi4dYXs3lPUudT8vkwEA25LCYaSHZC08G5l6aDhC7i/g06Z3KHZtAt663wmKSZmuHgtw==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PNZPR01MB4173
+MIME-Version: 1.0
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">Th=
+ank you for contacting us. This is an automated response confirming the rec=
+eipt of your ticket and assigned to Ch Danny Kranthi Kumar. When replying, =
+please make sure that the ticket ID is kept in the subject so that we can t=
+rack your replies
+
+    <!-- <h4>Ticket Details</h4> -->
+    <p><b>Ticket Id</b> : YFB-7760191</p>
+    <p><b>Ticket Message</b> : </p>
+    <p></p>

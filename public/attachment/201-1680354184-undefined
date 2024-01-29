@@ -1,0 +1,293 @@
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=Go9bemiP8FHmOBhIJq3g1c2abu4UMBjQG6/9jOQbNfjiQ5tAN2PSiR392CIkHtau12w8wUd2JqmKkGzVSca/n8/p2bakeQDK383HspXGgTXKgXPVO17scHYHilDEzaAlWjD1JraQ1g9XHxfPPVbV+KW1XM8+QAf0ZGK/qjWZo4mLCQa4ZAJ8K98RSSLYQhY2X76v9DtENyQBy77ZL5n4e6gtrpZ+S5aAeIRXPD9+nwOS1UKO2MeHU3pIybyX0cHO1tVof8iMNygQrKm1ycYvRZl0JUEISpnNJeNJBg+gP8bLe6tQc63wNQCyLDaN8xiiar85Ul9hGeZ9sxHtnTrymQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=FV5zhO8snUwO4O9ZvLQqoZpN4y5uqICsx8UHkDw8KTY=;
+ b=MbLd2HcBic8sl9kVrHVQLMigMCU41+hnSQDpj/MBkUK9CMH2X8CZv/7j6Gy/hG9o4wVAIRncVGUHX3YMcqIjRNnB+KWn+qSbkUfgxy8oc7/a+ZIWkBbPypK0taQbiqIJvUt8XNb2aJkz4VhjS7djz2wxK2ELrdjGR0btaCh9bymOh8ZGib0oq48ubnDQaWUzrSUenz2B9n1G/jBuFZ9LUp2/iWhRltfIePeIn5X0m5JgsZNtvBVnKb2X/spEaa8mHyDdP56DLc5jPav1mb7d34EsmsoiHfIqNrRn92YKLTc/wUtYBe3s3laSkUgVC9ubcD2Q8mfqVaTfehMuH6F6Rg==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=tekroi.com; dmarc=pass action=none header.from=tekroi.com;
+ dkim=pass header.d=tekroi.com; arc=none
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=tekroi.com;
+Received: from MAZPR01MB7876.INDPRD01.PROD.OUTLOOK.COM (2603:1096:a01:25::13)
+ by MA0PR01MB6582.INDPRD01.PROD.OUTLOOK.COM (2603:1096:a01:7a::11) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6254.26; Sat, 1 Apr
+ 2023 13:02:07 +0000
+Received: from MAZPR01MB7876.INDPRD01.PROD.OUTLOOK.COM
+ ([fe80::d419:7cf9:bdcd:e11]) by MAZPR01MB7876.INDPRD01.PROD.OUTLOOK.COM
+ ([fe80::d419:7cf9:bdcd:e11%8]) with mapi id 15.20.6254.026; Sat, 1 Apr 2023
+ 13:02:07 +0000
+Message-ID: <9fcd1523599fc495e5126749a3dafb9f@10.85.65.15>
+Date: Sat, 01 Apr 2023 18:32:05 +0530
+Subject: [Ticket # FWU-1362733] : Re: test company credential's
+From: TEKORI SUPPORT <support@tekroi.com>
+To: varshith.kuppagiri@tekroi.com, danny.kranthikumar@tekroi.com
+CC: durgarao@krsindia.in, narasimhulu@izura.in, accounts@izura.in
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-ClientProxiedBy: PN3PR01CA0038.INDPRD01.PROD.OUTLOOK.COM
+ (2603:1096:c01:98::6) To MAZPR01MB7876.INDPRD01.PROD.OUTLOOK.COM
+ (2603:1096:a01:25::13)
+Return-Path: support@tekroi.com
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: MAZPR01MB7876:EE_|MA0PR01MB6582:EE_
+X-MS-Office365-Filtering-Correlation-Id: 45a8daa7-ae2f-4c06-33aa-08db32b14c23
+X-MS-Exchange-SenderADCheck: 1
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam: BCL:0;
+X-Microsoft-Antispam-Message-Info:
+ inYk2MoC9WVKv9O/Un1Le9F23TYB15cmHYYGS8w5SoWv6chkgVQoi8INEw+Z/6WRGfFaSIptLWBDIRyHIH++tYmkQ1mOu+IB6Kj155i02zbAAiz1/eYQUHkJSAniPIq2XNTYSAw5lh+ATUAe6wxkdChfmUbnnJ3apzN0UplaLr7hYTy2La9JX6Ed5eOXM0CV6VYs7hjQbIp0iaMcg4B8TE9nBzUovy9a+/t/ovVPmZ1pLU0BtSz7ysljqKiKqoTlRZRleDP09MR1lFkA2YyycHSePLmT+q1mUqH9Qvzz67HYRiM9vtpv5Qpfop2qe2AmK4L5vwXhVbUQLRdlZtDJBlC01BrveGW3Bh2GxfTT9kF4w9fVA/LtAlMVyemg1ngIInMWyd92RYwlw+DBl7eGoq/NZvei/7ItoeaIOuovFdwL11Ltq3Fo4mRFM8by1kTVwtKOrRY15Wm7QFr8ScyetJh44TW2+y9ec7Ie3GAxtAO2GnbIpHtNQziXBsptX1WxE4Yo2RjCL0yr6KdO/qhjgC5DP4MMoios0XbFIHsFzIHh8AikBytWyO6uOh3iikglCxv5iIzSvZxGNWFR4Bkh//YppatQtL34Bx71QqrdeI2IhjlB9OYn9hUYziNKSJju0FtF/8rA3hwf/nEENEtqQg==
+X-Forefront-Antispam-Report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:MAZPR01MB7876.INDPRD01.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230028)(136003)(376002)(346002)(366004)(39830400003)(396003)(451199021)(19627405001)(4326008)(53546011)(8676002)(6636002)(316002)(66946007)(66476007)(6486002)(66556008)(6512007)(6506007)(26005)(186003)(38350700002)(38100700002)(83380400001)(5660300002)(8936002)(41300700001)(478600001)(108616005)(9686003)(52116002)(14286002)(24736004)(86362001)(2906002)(8420600001);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-0:
+ =?us-ascii?Q?kh3BQ85ptdUOLJcsTnnfWHNFMqrANGuPlp6738Tjt3fU13tpWikxkiYTlApG?=
+ =?us-ascii?Q?c0NYgdYLpU0SohwtbRQU1nvv5oWnNpRsRyKLvj659Y27bFXvq9hV3QyKMkGx?=
+ =?us-ascii?Q?x+fBAV5J0Rua9IZFrAnQFEQq8jMhCdZLuPwITHwqk0eLZhWIRGKxS0gdUvUd?=
+ =?us-ascii?Q?YWs4KtcYgbIFtwpZfjiKuTN3PK+gSTQbOl6dPqJMFaG9MsxdOUhwS3QUU9CX?=
+ =?us-ascii?Q?fqXLyV+FM7pQpr3uZMAQ0cjrbdhIHuwZgmnhiG6T90jg5NDk+JO6mfKndeSu?=
+ =?us-ascii?Q?VE/jzMv2TN3pQPU4jC5a1cHX8jXlAEmU6HPYJdHVfW4xJVBP4t5SbVRZaasW?=
+ =?us-ascii?Q?tocl5NXu9nZ9k9CCfT2xsMsdEfjSKbmYMgk1hKw6L7OcMCLDdtqDz/lh/pCu?=
+ =?us-ascii?Q?3kSvH35m2jf/f/ac6fnxxWdke2zGs37TpcZVaGNcthyQUNTY++ezLzBKtgpz?=
+ =?us-ascii?Q?S/dV5OPQQYO7Py/Kqcsz0ggcULOiNlZq5dVPDsc/dnJkt6ktT7j4pHT4vFWK?=
+ =?us-ascii?Q?8/kO1Z21vukC56/O3Ky/8fqY/F7CyId4VmktvT2B45y4KqZen5NRg9oJEXV1?=
+ =?us-ascii?Q?Tpm6uo/gvi+lXr3CY7nCuIAoNChiPRLJbJIKDjRqhHJL7EJQOLBMm8DTjWWD?=
+ =?us-ascii?Q?0XGKGP0y1PkuyMlnWPdEnOHwEoO7KgBSQEMj3XnnEeV84kEwBpZpVbYU8jPK?=
+ =?us-ascii?Q?AowoGEpsPpjzby59yrv5lPSNqXeFdfav0FKjaxcrdf0jxnrENRfSVHnwF+gn?=
+ =?us-ascii?Q?lqLIstb3HGYgkO4s0+Mhrkyhrq/TGs+jyucouQtc3HtIswfaSbtzteVrcEtz?=
+ =?us-ascii?Q?lWvixTKo9IcHAs1uBC3fLLIPiaUbbiwutgPb13b9d+kXXkJyFhSrjdoiW+7M?=
+ =?us-ascii?Q?RT2kHTnzEmWt26u7a0pdyG2kZhBcH2DA9MVs6nn0r6h8z8rfpxxZhro/eSi5?=
+ =?us-ascii?Q?rymXyL7gpqXZsDDSw1hbWurrHIrPV0zDIqL4uB/l8W49MSNQ191sJ+/J+kVX?=
+ =?us-ascii?Q?4Wy/Y08FU0YFiQBB/TSoOTle36PDilsND9buawTS7wblKrtDYhUjBryffe6d?=
+ =?us-ascii?Q?bL9LMqNpuQZwWQ5E/LDoSzJ6YlLrkf9KHBQS1HzBRF3bRiQoGcciWhwFgq/E?=
+ =?us-ascii?Q?5BLo5UEHBwZFCqL3k6pgwt8dnwrLJSZMYkyR3LckxDc9l/S1j7V+SPa5EIcU?=
+ =?us-ascii?Q?bklH7n8D9QjtiOxqoAm+mOKat+EN+N9dHcrRLSgbTzagE4Q2jmQsfApRXArQ?=
+ =?us-ascii?Q?OK9NjBIdWJ9jr9ufbqtn5xr1BHrdIHOHuuhIpk+c3q6f+EmGxMO/BR4RcgeI?=
+ =?us-ascii?Q?R3DIBLlROy4tRgml80LxVm9GaSi57lE5qO8dNvQ6WBq6f99xXTU/y1KIdfZM?=
+ =?us-ascii?Q?B/NvxqGHrKtv795bdZN687aKFaABNvbNxOeSBe0o1gHHMn06fgQPamsgLkaV?=
+ =?us-ascii?Q?IUtJnCx8imCJ09EjkzioA8fSC4Thwp2ayIZ/laIKNwoIBJIBjWMOuUFW3R2i?=
+ =?us-ascii?Q?woE+dMEZ8caaYKaIiO7fRwlECqJfl2y7fI391NT3k0byeO9zalXOt78T4zpx?=
+ =?us-ascii?Q?iJAyvnJyo4r9TrpT6iu68DPb1AWGkXiqLDtG76T5?=
+X-OriginatorOrg: tekroi.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 45a8daa7-ae2f-4c06-33aa-08db32b14c23
+X-MS-Exchange-CrossTenant-AuthSource: MAZPR01MB7876.INDPRD01.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 01 Apr 2023 13:02:07.1870
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: fcb610c8-8233-4f53-9e08-7e49c64f5e1f
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: LpaP7cfSGiC04Xgpx73XfzqjV60cZgvq7mI1b/l/+sIsawCdLmAWaQCXHOfhQFvkeQATxA9xuMv/j7aHbTTqWg==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MA0PR01MB6582
+MIME-Version: 1.0
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">Th=
+ank you for contacting us. This is an automated response confirming the rec=
+eipt of your ticket and assigned to Ch Danny Kranthi Kumar. When replying, =
+please make sure that the ticket ID is kept in the subject so that we can t=
+rack your replies
+
+    <!-- <h4>Ticket Details</h4> -->
+    <p><b>Ticket Id</b> : FWU-1362733</p>
+    <p><b>Ticket Message</b> : </p>
+    <p><html>
+<head>
+
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=
+=3D"elementToProof">
+Dear Manindhar</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=
+=3D"elementToProof">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=
+=3D"elementToProof">
+&nbsp;we have&nbsp; created Test Database and&nbsp; Users&nbsp;</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=
+=3D"elementToProof">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=
+=3D"elementToProof">
+TEST_KRSGROUP</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=
+=3D"elementToProof">
+User:Test1</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=
+=3D"elementToProof">
+Password:1234</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=
+=3D"elementToProof ContentPasted1">
+User:Test2
+<div class=3D"ContentPasted1">Password:1234</div>
+<br>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=
+=3D"elementToProof">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=
+=3D"elementToProof">
+TEST_IZURA_LIVE</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=
+=3D"elementToProof ContentPasted0">
+User:Test1
+<div class=3D"ContentPasted0">Password:1234</div>
+<br>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=
+=3D"elementToProof ContentPasted0 ContentPasted2">
+User:Test1
+<div class=3D"ContentPasted2">Password:1234</div>
+<br>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=
+=3D"elementToProof ContentPasted0 ContentPasted2">
+Thanks &amp; Regards</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=
+=3D"elementToProof ContentPasted0 ContentPasted2">
+Varshith</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=
+=3D"elementToProof">
+<br>
+</div>
+<div id=3D"appendonsend"></div>
+<hr style=3D"display:inline-block;width:98%" tabindex=3D"-1">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" st=
+yle=3D"font-size:11pt" color=3D"#000000"><b>From:</b> Manindhar Achyuta &lt=
+;accounts@izura.in&gt;<br>
+<b>Sent:</b> 01 April 2023 11:40<br>
+<b>To:</b> Varshith Reddy Kuppagiri &lt;varshith.kuppagiri@tekroi.com&gt;<b=
+r>
+<b>Cc:</b> Lakshmi Durga Rao Oduri &lt;durgarao@krsindia.in&gt;; narasimhul=
+u@izura.in &lt;narasimhulu@izura.in&gt;; Support TEKROI &lt;support@tekroi.=
+com&gt;<br>
+<b>Subject:</b> Re: test company credential's</font>
+<div>&nbsp;</div>
+</div>
+<div>
+<div dir=3D"ltr">
+<div class=3D"x_gmail_default" style=3D"font-family:verdana,sans-serif">Dea=
+r&nbsp;Varshith</div>
+<div class=3D"x_gmail_default" style=3D"font-family:verdana,sans-serif"><br=
+>
+</div>
+<div class=3D"x_gmail_default" style=3D"font-family:verdana,sans-serif">Ple=
+ase provide the passwords&nbsp;</div>
+<div class=3D"x_gmail_default" style=3D"font-family:verdana,sans-serif"><br=
+>
+</div>
+<div>
+<div dir=3D"ltr" class=3D"x_gmail_signature" data-smartmail=3D"gmail_signat=
+ure">
+<div dir=3D"ltr">Regards
+<div>A V Manindhar</div>
+<div>Assistant Manager Finance</div>
+<div>+91 7799984304</div>
+</div>
+</div>
+</div>
+<br>
+</div>
+<br>
+<div class=3D"x_gmail_quote">
+<div dir=3D"ltr" class=3D"x_gmail_attr">On Sat, Apr 1, 2023 at 11:39=E2=80=
+=AFAM Varshith Reddy Kuppagiri &lt;<a href=3D"mailto:varshith.kuppagiri@tek=
+roi.com">varshith.kuppagiri@tekroi.com</a>&gt; wrote:<br>
+</div>
+<blockquote class=3D"x_gmail_quote" style=3D"margin:0px 0px 0px 0.8ex; bord=
+er-left:1px solid rgb(204,204,204); padding-left:1ex">
+<div class=3D"x_msg4767860737247074031">
+<div dir=3D"ltr">
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12p=
+t; color:rgb(0,0,0); background-color:rgb(255,255,255)">
+Dear Durga,</div>
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12p=
+t; color:rgb(0,0,0); background-color:rgb(255,255,255)">
+<br>
+</div>
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12p=
+t; color:rgb(0,0,0); background-color:rgb(255,255,255)">
+As per mail we have created Test Database<br>
+<br>
+</div>
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12p=
+t; color:rgb(0,0,0); background-color:rgb(255,255,255)">
+Data Base Name : TEST_KRSGROUP<br>
+Data Base Name : TEST_IZURA_LIVE<br>
+</div>
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12p=
+t; color:rgb(0,0,0); background-color:rgb(255,255,255)">
+<br>
+</div>
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12p=
+t; color:rgb(0,0,0); background-color:rgb(255,255,255)">
+<b style=3D"font-size:15px; color:rgb(36,36,36); background-color:rgb(255,2=
+55,255)"><font style=3D"color:rgb(102,102,102)">Thanks &amp; Regard</font><=
+/b><br>
+</div>
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12p=
+t; color:rgb(0,0,0); background-color:rgb(255,255,255)">
+<b style=3D"font-size:15px; color:rgb(36,36,36); background-color:rgb(255,2=
+55,255)"><font style=3D"color:rgb(102,102,102)">Varshith</font></b></div>
+<div id=3D"x_m_4767860737247074031appendonsend"></div>
+<hr style=3D"display:inline-block; width:98%">
+<div id=3D"x_m_4767860737247074031divRplyFwdMsg" dir=3D"ltr"><font face=3D"=
+Calibri, sans-serif" color=3D"#000000" style=3D"font-size:11pt"><b>From:</b=
+> Lakshmi Durga Rao Oduri &lt;<a href=3D"mailto:durgarao@krsindia.in" targe=
+t=3D"_blank">durgarao@krsindia.in</a>&gt;<br>
+<b>Sent:</b> 31 March 2023 11:19<br>
+<b>To:</b> Support TEKROI &lt;<a href=3D"mailto:support@tekroi.com" target=
+=3D"_blank">support@tekroi.com</a>&gt;; Manindhar Achyuta &lt;<a href=3D"ma=
+ilto:accounts@izura.in" target=3D"_blank">accounts@izura.in</a>&gt;;
+<a href=3D"mailto:narasimhulu@izura.in" target=3D"_blank">narasimhulu@izura=
+.in</a> &lt;<a href=3D"mailto:narasimhulu@izura.in" target=3D"_blank">naras=
+imhulu@izura.in</a>&gt;<br>
+<b>Subject:</b> test company credential's</font>
+<div>&nbsp;</div>
+</div>
+<div>
+<div dir=3D"ltr">Dear Krishna,
+<div>Please provide the <b>test company</b> <b>credential</b> KRS GROUP,IZU=
+RA.</div>
+<div><br clear=3D"all">
+<div><br>
+</div>
+<br>
+<div dir=3D"ltr">
+<div dir=3D"ltr"><b><font color=3D"#666666">Thanks &amp; Regards</font></b>
+<div><b><font color=3D"#6fa8dc">Durga.oduri</font></b></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+</div>
+</body>
+</html>
+</p>

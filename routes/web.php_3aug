@@ -1,0 +1,201 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CustomAuthController;
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/clear-cache', function() {
+    Artisan::call('cache:clear');
+    return "Cache is cleared";
+});
+
+Auth::routes();
+
+// Route::get('/home', 'App\Http\Controllers\HomeController@home')->name('home');
+Route::get('/', 'App\Http\Controllers\HomeController@index')->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::any('users_list', array(
+    'uses' => 'App\Http\Controllers\UserController@user',
+    'as'   => 'users_list'
+));
+
+Route::any('add_user', array(
+    'uses' => 'App\Http\Controllers\UserController@addEmployees',
+    'as'   => 'add_user'
+));
+
+Route::any('employee_json', array(
+    'uses' => 'App\Http\Controllers\UserController@employeejson',
+    'as'   => 'employee_json'
+));
+
+Route::any('get_users/{user_id}', array(
+    'uses' => 'App\Http\Controllers\UserController@getUsers',
+    'as'   => 'get_users'
+));
+
+Route::any('update_users', array(
+    'uses' => 'App\Http\Controllers\UserController@updateUser',
+    'as'   => 'update_users'
+));
+
+Route::any('support_view', array(
+    'uses' => 'App\Http\Controllers\SupportController@supportView',
+    'as'   => 'support_view'
+));
+Route::any('support_json', array(
+    'uses' => 'App\Http\Controllers\SupportController@supportJson',
+    'as'   => 'support_json'
+));
+Route::any('update_status', array(
+    'uses' => 'App\Http\Controllers\SupportController@updateStatus',
+    'as'   => 'update_status'
+));
+
+Route::any('view_email_body/{id}', array(
+    'uses' => 'App\Http\Controllers\SupportController@viewEmailBody',
+    'as'   => 'view_email_body'
+));
+Route::any('update_support_status', array(
+    'uses' => 'App\Http\Controllers\SupportController@updateSupportStatus',
+    'as'   => 'update_support_status'
+));
+
+Route::any('update_support_comments', array(
+    'uses' => 'App\Http\Controllers\SupportController@updateSupportComments',
+    'as'   => 'update_support_comments'
+));
+
+Route::any('support_emails', array(
+    'uses' => 'App\Http\Controllers\SupportController@supportEmails',
+    'as'   => 'support_emails'
+));
+Route::any('email_json', array(
+    'uses' => 'App\Http\Controllers\SupportController@emailJson',
+    'as'   => 'email_json'
+));
+
+Route::any('view_ticket/{id}', array(
+    'uses' => 'App\Http\Controllers\SupportController@viewTicket',
+    'as'   => 'view_ticket'
+));
+
+
+
+Route::any('view_ticket_json', array(
+    'uses' => 'App\Http\Controllers\SupportController@viewTicketJson',
+    'as'   => 'view_ticket_json'
+));
+
+Route::any('ticket_details', array(
+    'uses' => 'App\Http\Controllers\SupportController@addTicketDetails',
+    'as'   => 'ticket_details'
+));
+
+Route::any('update_details', array(
+    'uses' => 'App\Http\Controllers\SupportController@updateDetails',
+    'as'   => 'update_details'
+));
+
+Route::any('timesheets', array(
+    'uses' => 'App\Http\Controllers\TimesheetController@timesheets',
+    'as'   => 'timesheets'
+));
+
+Route::any('timesheet_details', array(
+    'uses' => 'App\Http\Controllers\TimesheetController@addTimesheetDetails',
+    'as'   => 'timesheet_details'
+));
+
+Route::any('projects', array(
+    'uses' => 'App\Http\Controllers\ProjectController@Project',
+    'as'   => 'projects'
+));
+
+Route::any('add_project', array(
+    'uses' => 'App\Http\Controllers\ProjectController@addProject',
+    'as'   => 'add_project'
+));
+
+Route::any('project_json', array(
+    'uses' => 'App\Http\Controllers\ProjectController@projectjson',
+    'as'   => 'project_json'
+));
+
+Route::any('add_ticket', array(
+    'uses' => 'App\Http\Controllers\SupportController@addTicket',
+    'as'   => 'add_ticket'
+));
+
+Route::any('timesheets_list', array(
+    'uses' => 'App\Http\Controllers\TimesheetController@timesheetsList',
+    'as'   => 'timesheets_list'
+));
+
+Route::any('timesheets_json', array(
+    'uses' => 'App\Http\Controllers\TimesheetController@timesheetsJson',
+    'as'   => 'timesheets_json'
+));
+
+Route::any('user_domain', array(
+    'uses' => 'App\Http\Controllers\UserController@userDomain',
+    'as'   => 'user_domain'
+));
+
+Route::any('add_domain', array(
+    'uses' => 'App\Http\Controllers\UserController@addDomain',
+    'as'   => 'add_domain'
+));
+
+Route::any('domain_json', array(
+    'uses' => 'App\Http\Controllers\UserController@domainjson',
+    'as'   => 'domain_json'
+));
+
+Route::any('get_domain/{user_id}', array(
+    'uses' => 'App\Http\Controllers\UserController@getDomain',
+    'as'   => 'get_domain'
+));
+
+Route::any('update_user_domain', array(
+    'uses' => 'App\Http\Controllers\UserController@updateUserDomain',
+    'as'   => 'update_user_domain'
+));
+Route::any('delete_domain/{id}/{status}', array(
+    'uses' => 'App\Http\Controllers\UserController@deleteDomain',
+    'as'   => 'delete_domain'
+));
+
+ Route::get('/changePassword', [App\Http\Controllers\UserController::class, 'showChangePasswordGet'])->name('changePasswordGet');
+Route::post('/changePassword', [App\Http\Controllers\UserController::class, 'changePasswordPost'])->name('changePasswordPost');
+
+
+Route::post('replyticket', [App\Http\Controllers\SupportController::class, 'storeReplyTicket'])->name('replyticket');
+
+// Route::get('send-mail', function () {
+   
+//     $details = [
+//         'title' => 'Mail from tekroi.com',
+//         'body' => 'This is for testing email using smtp'
+//     ];
+   
+//     \Mail::to('pujitha.balineni@tekroi.com')->send(new \App\Mail\MyTestMail($details));
+   
+//     dd("Email is Sent.");
+// });
+

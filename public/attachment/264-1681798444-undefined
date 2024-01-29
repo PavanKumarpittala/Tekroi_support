@@ -1,0 +1,96 @@
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=GRhYQggFCHY9VWuBayBx2TuYEKhVS1MghWCzuPdtnWTz04/xQ+oHQNm6km75tk+f3RynI5QHrakdjheUBaWpDz/ZVqHOIurKvwtIlzoYqxlOH5gWf1j8sOyqhtL1ra+HdifpNuJyfkezdMPuwOH/JUCtfSLgXfGnir5FUczZlTOPrXgF7XHj8itradwENDPCz69WPnrk19QThJ8Uddglj9/6Yc+7Hazr4kYfal4n03FueiMB4GW4Ls2WoEK2+VzO5ONMbMqWoPBjZMqHwhajGUJW4K+xkzNlfziAq+KX0KFFeeroBW/EOMHLllGDBXD7NCFqXMCJiapYjmk22sH+ZQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=E8800Qu8kcgb40ZG3Swic1EY2Jm5uqlklmQjxg1w3Gc=;
+ b=eNVsDyViuq0jQx1DJbwVEGY6sZX67Pyls9AB8LSBqyKcUp+kUaQXtvTCiH/kdhFY8DfEYLhguG3LZV+hyB5hl12YYZrjtTN/K9yX6zEdW+PhkuUm81CT8ibkueCCDh+BFN4InGFjVNZIyqMMDTSQdW6ZaDRQVhwpOJN7eeN/Wx350H0Hlu4WnC2h1GKbTqUbUQ8l5ZBedvTpwS5wYBBHZ4Jn/+7k+XR9WrMPOPNnRPjUts8106ZCJCZrIOQTCN6yE4oL/Xjqp7wjkwa05tdcmO5WPbV1jzLUVlmjeR2ebOdhzL8rO+fQMWln7l0f+27zRUWdAQBMnKpeRJOar/zqcA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=tekroi.com; dmarc=pass action=none header.from=tekroi.com;
+ dkim=pass header.d=tekroi.com; arc=none
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=tekroi.com;
+Received: from MAZPR01MB7876.INDPRD01.PROD.OUTLOOK.COM (2603:1096:a01:25::13)
+ by MAZPR01MB8743.INDPRD01.PROD.OUTLOOK.COM (2603:1096:a01:24::12) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6298.45; Tue, 18 Apr
+ 2023 06:13:06 +0000
+Received: from MAZPR01MB7876.INDPRD01.PROD.OUTLOOK.COM
+ ([fe80::d419:7cf9:bdcd:e11]) by MAZPR01MB7876.INDPRD01.PROD.OUTLOOK.COM
+ ([fe80::d419:7cf9:bdcd:e11%6]) with mapi id 15.20.6298.045; Tue, 18 Apr 2023
+ 06:13:06 +0000
+Message-ID: <31a4b2d2225f0b04683e9bf4a8a09fdb@10.85.65.15>
+Date: Tue, 18 Apr 2023 11:43:04 +0530
+Subject: [Ticket # ZEP-9526859] : RE: Access to Vizag FALED ( Vizag) and
+ FAWCPL ( Vizag)
+From: TEKORI SUPPORT <support@tekroi.com>
+To: ambika.thatavarthi@tekroi.com, danny.kranthikumar@tekroi.com
+CC: preetin@electricallines.com, priyank.j@fortunearrt.com
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-ClientProxiedBy: PN0PR01CA0052.INDPRD01.PROD.OUTLOOK.COM
+ (2603:1096:c01:49::21) To MAZPR01MB7876.INDPRD01.PROD.OUTLOOK.COM
+ (2603:1096:a01:25::13)
+Return-Path: support@tekroi.com
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: MAZPR01MB7876:EE_|MAZPR01MB8743:EE_
+X-MS-Office365-Filtering-Correlation-Id: abdfe906-cedb-441f-0dae-08db3fd3f9a3
+X-MS-Exchange-SenderADCheck: 1
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam: BCL:0;
+X-Microsoft-Antispam-Message-Info:
+ AmcHn+mxdsHMBtnPZUEZQNnYh1zjDl11KFrip1fX0OZhW8nR78+pp1cNc+ggRphTck8Y0alluPb8ITqq52cRNA/CYj9XcIRgYLeFfgEwKKiYiW5UgFsj1z4lfKFRbV9JPP8RQr4QQImMY5RrKRGkY8qnjBAbpbvoKNFcEXQCQ0Co+qJcsNzVnX/7HS9D0iW0lBQShrHlSnsUXEiSnPDYXqWOkwMwAWDjLszwOEBLZZDk10DZ5b/7ZlIEPQGmp/1rwU7gMiUX5vXeEkrLTLbLRSBtGV/q7YIxPW3m/Dt/bLqAHQa2b4zue1TqKjU10vRJoR4ThmpXLvxPsyzbX1eFKp/OB8jMU74E1RlK9r5Z2RtS62GCO5A7j5CHZVda9F58NUHqfQl92i79wVh2Uiq4f3yXDwQONMTQ05qJ0yPNiYdslgy+MRwspL7Sp9lESV4n0weXB21uem53vP3VzeeO5XiB6WNOgvaRpP3JmjfbTeKHQSsTF/9U2xioTvsfnP6GutnHR4GyhswnHtDC0+Iii6GQdfLFVkLtb67KilttmFFYjVIR3ewn7PTkvMW/jdMZBUfdUwGh1Q8dXypc5etrM/UTywV9up34gudECl44fudbctwHAtq9/OiGP9z2cO56PoMVZ+CowQpaQiAZCFVaGg==
+X-Forefront-Antispam-Report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:MAZPR01MB7876.INDPRD01.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230028)(396003)(366004)(136003)(346002)(39840400004)(376002)(451199021)(5660300002)(86362001)(6512007)(6636002)(83380400001)(186003)(9686003)(26005)(6506007)(38100700002)(38350700002)(14286002)(8676002)(8936002)(478600001)(6486002)(24736004)(558084003)(108616005)(316002)(52116002)(41300700001)(66476007)(66556008)(4326008)(66946007)(2906002)(8420600001);DIR:OUT;SFP:1101;
+X-MS-Exchange-AntiSpam-MessageData-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-0:
+ =?us-ascii?Q?bEfa3SCDx8Cfi9CwLRm+Beq8DlB1dziRik06w2kJXuBdfoAB+C/X97RzRuaC?=
+ =?us-ascii?Q?r031WmIrSZODFjX+nU3IhUxg8YBftvAcvw6Ek68xMGO2HCI+sWBWjyrX4goQ?=
+ =?us-ascii?Q?XfgSvGMb4Dfrs1HLlZpn7QgG4mSfT+1kdyJjHxunK/uduh1ajcDwGzgE69u0?=
+ =?us-ascii?Q?ozF95RxfbFrxuShcicQXWznyA6D0hij2z3kdGB9rs4oALVFB1QkC6mn0LN6x?=
+ =?us-ascii?Q?3e5SQRO99n62+7XpaI6vdk3JeXYaPvcP1o26iZRMfbu3c1DV8ZaCTeNVGA7h?=
+ =?us-ascii?Q?bt9TGH4hVNj9Yic40g8Rf+Gwks0yK1ZzSs5+4L+H5p1HCS9/vWFIrFLl6Qk3?=
+ =?us-ascii?Q?ygnNo1QQ9Rf90BKQDsYyNv5UqhTCYzHmF+nThHTa4Hd20QhKP5h4Qe6SVIwL?=
+ =?us-ascii?Q?Qpp/xka87bH9LEt8sRrwTL0HLTFxMrn9vvAu7csGjOp4a3fxtJ4Dhz94lU6j?=
+ =?us-ascii?Q?f4/tX428TAuRCQTGXdrFRPbN+Wlihoo+m4UaqtL9pKtSZfXTwGFPl6Ko0j5E?=
+ =?us-ascii?Q?07ExGH8y/M1+GQ44lOMlZ0iZOkCeqxFbpSCwGMds3SuI0Em/S+E6LsEtkbW2?=
+ =?us-ascii?Q?mtRWi6hkPBV9YgATl+tmXw9VbTdQWFpkXeG8+UDBzpdMbo1ZYStrZZYoB25r?=
+ =?us-ascii?Q?v58orQGzR+mGIg/qjHPVBOgxEDHJ6BoNqneq2Si46iPZKItgzH2AEpTTU6A6?=
+ =?us-ascii?Q?Ygz+xTRN4QNiZrAbKcsPxfj29lg5eVsrQ0D2JjtOtSnpVeg8O7prrLFclTaE?=
+ =?us-ascii?Q?IsK3MCT1jOHdLASxZMFuoWuzyPxSb0akqhVgZZv4emnH3z63XPM6FWTmb/d2?=
+ =?us-ascii?Q?N/GA+JQl7Su+mvzNEiil5ehMZ/u15V2+Sh2OO43+Ujk6PHXEyrC6Vt4AF4ck?=
+ =?us-ascii?Q?+9O5lrtab3fzGFGjmMnwbLE/wzun8Or8m5GnvoC5hIsDMSkIEpA1XCxqGE2P?=
+ =?us-ascii?Q?mMYanBmsJZzZ9zhli4DRpPIMwHNJe0O0F06G/G+d9+lHOHYnJsPJ0+mGxatL?=
+ =?us-ascii?Q?zRM2lXzsq0tvZ0OpMHcAVVenndAeHHwJ2F2mbzEAHQpncKR89KiIEqkPTA7S?=
+ =?us-ascii?Q?WmOR218DsFEgmsGalOCu8CYKidYw0dAGIm+fPEyS1wG1GLh+ibM8nFa6hptx?=
+ =?us-ascii?Q?8dgn0kl8s2VJdNqnqUwiiiu+8piQ12kCpGUBrTiCGTaWyOaxCeJNNH2tz8/E?=
+ =?us-ascii?Q?HzFN3+lRd6qcBR0/UaKcnctwNVduHRpupEulwaqwpBWRn+236cbdTg71B0Gw?=
+ =?us-ascii?Q?zf//dgkieBrfx3c7PVIuiBkqf7+I85Zy6apRRzKV1NcITKN0W2TC8sh9TurZ?=
+ =?us-ascii?Q?VB4aZos9+ic0AkgKEvMGOpHFmKSHMjJgm1wfVz4U7Z8b+BKByZ7bzws06NCH?=
+ =?us-ascii?Q?8lKdJ4g1zVBF+d3bbef4nIAM/2u5vSUL/gdBP5tVFIf161YeybzpzMgQ19D2?=
+ =?us-ascii?Q?lt/3rQqezq8r3PHSqOZIpOv/bQyBMe8wRk6F8NEH3MQdtdo+UDu8BIR6B2GY?=
+ =?us-ascii?Q?xW4jSX1eveXXOTOMmwMxWeS9+BHwZL+MqwG7GZ5w7d1ipF7KnXnAw7UnHos/?=
+ =?us-ascii?Q?aBSWZ/hMQP2gxfcYiiwlMMy2JQH4X+79II55s1G9?=
+X-OriginatorOrg: tekroi.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: abdfe906-cedb-441f-0dae-08db3fd3f9a3
+X-MS-Exchange-CrossTenant-AuthSource: MAZPR01MB7876.INDPRD01.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 18 Apr 2023 06:13:06.2558
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: fcb610c8-8233-4f53-9e08-7e49c64f5e1f
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: VLnsAdKxXH855Mdv+k8551OKzQ5sM3VrJPPilF4AcygdHtunYfKIzSmUYOWixpYyT64z1XiM90LU7HY74+zPxA==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MAZPR01MB8743
+MIME-Version: 1.0
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">Th=
+ank you for contacting us. This is an automated response confirming the rec=
+eipt of your ticket and assigned to Ch Danny Kranthi Kumar. When replying, =
+please make sure that the ticket ID is kept in the subject so that we can t=
+rack your replies
+
+    <!-- <h4>Ticket Details</h4> -->
+    <p><b>Ticket Id</b> : ZEP-9526859</p>
+    <p><b>Ticket Message</b> : </p>
+    <p></p>

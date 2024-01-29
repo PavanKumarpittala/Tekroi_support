@@ -1,0 +1,5 @@
+DocNum,DocDate,DocDueDate,CardCode,NumAtCard,Comments,SalesPersonCode,Series,Original Invoice. No.,Original Invoice. Date
+DocNum,DocDate,DocDueDate,CardCode,Credit Note Voucher No,Remarks,SlpCode,Series,Original Invoice. No.,Original Invoice. Date
+5002,20221221,20221221,CMH00068,CN/TG/0261,Sales Return GST,330,TS,BIOFAC/TG/002360,20221221
+5003,20221226,20221226,CMH00072,CN/TG/0272,Sales Return GST,320,TS,BIOFAC/SP/0091,20221226
+5004,20221228,20221228,CMH00079,CN/TG/0271,Sales Return GST,320,TS,BIOFAC/SP/0092,20221226

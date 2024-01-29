@@ -1,0 +1,8 @@
+ParentKey,LineNum,ItemDescription,TaxCode,LineTotal,Remarks
+DocNum,LineNum,Description,TaxCode,Taxable Amount,Remarks
+5005,0,Being cambo 250 ml 1 case and high k 2.0 5ltr was billed but material not received by dealer- confirmed by RM Sandeep khandawe,IGST12,38104,Sales Returns
+5006,0,being the belom s2 by mistake entered 20 nos  in plase of 08 nos,IGST5,13804,Sales Returns
+5007,0,Being credit note issued as on 1/10/2022,IGST5,23006,Sales Returns
+5008,0,Being stock transferred from tuljai to kushal enterprises,IGST5,114690,Sales Returns
+5008,1,Being stock transferred from tuljai to kushal enterprises,IGST12,62275,Sales Returns
+5009,0,Being credit note issued for inv no BIOFAC/TG/002213 dated 2nd dec 2022 and DC issued for this products,IGST5,190208,Sales Returns

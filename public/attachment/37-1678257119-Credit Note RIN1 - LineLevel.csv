@@ -1,0 +1,5 @@
+ParentKey,LineNum,ItemDescription,TaxCode,LineTotal,Remarks
+DocNum,LineNum,Description,TaxCode,Taxable Amount,Remarks
+5002,0,Being Belom S1 5 ltr 2 cases wrongly sent instead of Belom S3 5ltr 2 cases,IGST5,9203,Sale Returns
+5003,0,Being 2 promote bags damaged- treated as given for demo purpose,IGST5,2052,Sale Returns
+5004,0,Being 20 bags biopotash not sent to dealer,IGST5,21980,Sale Returns

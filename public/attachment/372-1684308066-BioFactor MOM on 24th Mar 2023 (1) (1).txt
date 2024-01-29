@@ -1,0 +1,89 @@
+BioFactor MOM on 24th Mar 2023
+Attendees: Mr. Sudheer, Mr. Kiran, Mr. Janakiram, Mr. DK and Mr. VKB
+
+MOM:
+Sales Analysis Report 
+Sales Overview: 
+Mngt - 		1) BioFactor team will have their own subscription and TEKROI needs to publish the reports in their workspace - Over to Mr. Siva/ Mr. Sainath
+Done - 	2) Eleminate Inter branch transfers - Eg: Biofac Inputs Private Limited - Ap
+		3) Additional table with 'vertical balances' should be shown
+Done - 		4) Show Sales Returns and Netsale columns
+	
+Done - Overview:
+Done - 1) Insert a clear all filters button - in every dashboard
+Done - 2) Change all filters as dropdowns
+Done - 3) Insert additioinal analytics and graphs
+Done - 4) Insert Page Name in every Dashboard
+
+Done - India:
+Done - 5) in the tooltip show SO and  product tables and increase the fonts
+Done - 6) Insert Statewise Table with Total Sales and % sales
+
+Done - Daily Sales:
+Done - 1) Tooltip with invoice count and products, area (District) and SO Name
+Done - 2) show quantity also (Button for qty and value)
+
+Done - Daily Procuctions:
+Done - 1) Show Quantity  only, values not required (Button for qty and value)
+
+Done - Daily Consumption:
+Done - 1) Show Quantity  only, values not required (Button for qty and value)
+
+5M Sales 
+Done - 1) show quantity also (Button for qty and value)
+
+5M Production 
+Done - 1) show quantity also (Button for qty and value)
+Done - 2) Change top 10's wrt to production
+
+5M Consumption 
+Done - 1) show quantity also (Button for qty and value)
+Done - 2) Change top 10's wrt to consumption
+
+SO wise Outstanding Statement - 
+Done - change as Sales Employee Evaluation & Customer Ageing Analysis
+Done - 1) Change Bg 
+Done - 2) Op. Balance Sales Returns NetSales Collection Cl. Balance - where net sale = (Sales - returns - discount (Discounts field not there)
+Done - 3) * Split colletions in 2 ways - i) Current year ii) Old - for all fields except Sales and Net Sales
+Done - 4) % Salary TA/DA shall be on NetSales and Netcolletions
+Done - Need to update query - 5) Seperate columns for Salary and TA/DA plus continue Salary TA/DA field as is
+All amounts are coing from Gl's only, showing GL bal seperately is space consuming hance not shown - 6) Need GL Balances for cross checking
+Not shared yet - 7) Kiran will share the base excel tempate 
+
+Ageing:
+Done - 1) Change Billed as Opening Balance (split as Old and Current),  Dues as Closing Balance
+Done - 2) % Collected (Op Bal - Collection) - Current & old as againt Opening
+Done - 3) Bring forecast and actuals in to this reports
+
+Forecast:
+Done - 1) Hirerchy - RM ASM SO in the table
+Done - 2) Check if weekly calculations are working
+
+Inventory:
+1) 
+
+MIS:
+Sales Overview:
+1) Insert GL Balance to cross checking
+Done - 2) in the place of Details: Division wise Sales Overview - insert graphs - top 10 RM, top 10 SO, top 10 products 
+Done - 3) insert as many graphs as possible
+ 
+Receivable MOM:
+Done - 1) in the place of Details: Division wise MoM Overview - insert graphs - MOM sales movement, MOM Closing Bal movement, top 10's based on colletions
+
+Ageing: 
+Done - 1) NotDue Upto 6M 6M-1Y 1Y-2Y 2Y-3Y Above 3Y
+Done - 2) Ref whatsapp images at 14:22 of 24th Mar for the ageing format   
+Done as per point 2 - 3) OPB first show new total OP Bal column, then split
+Done as per point 2 - 4) Also add CY totals column also and Overall totals
+
+Receivables Range :
+Done - 1) Change Advances to Adverse Balances (Negatives) 
+
+Inactive Customers:
+We don't think inserting Others will have any purpose as the sales and receipts were already shown seperately with filter > 1year -  1) switch: in addition to Sales & Receipts add Others (which excludes Sales and Receipts) & All 
+
+Inventory Report:
+Done - 1) Home screen - change inventory report as warehouse report
+Done - 2) insert state, warehouse filter 
+Not possible as the visual was interdependent on other  field values - 3) remove all field zeros 
